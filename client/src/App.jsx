@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Header from './components/Header.jsx'
+import Home from './components/Home.jsx'
 function App() {
 
   // const [users, Setusers] = useState([]);
@@ -20,6 +21,7 @@ function App() {
   return (  
     <div className="">
         <Header />
+        <Home />
     </div>
   )
 }
