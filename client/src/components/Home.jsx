@@ -7,7 +7,7 @@ import video1 from '../assets/video/Ferrari-0.mp4';
 import video2 from '../assets/video/Ferrari-1.mp4';
 import video3 from '../assets/video/Lambor-Countach LPI 800-4.mp4';
 
-function Home() {
+export default function Home() {
 
     const videos = [
         { src: video1, title: 'Video 1' },
@@ -78,5 +78,3 @@ function Home() {
         </div>
     )
 }
-
-export default Home

@@ -4,7 +4,7 @@ import gsap from 'gsap'
 import logo from '../assets/image/Logo.png';
 
 
-function Header() {
+export default function Header() {
   const [hiddens, setHiddens] = useState("flex")
   const [opacitys, setOpacitys] = useState("opacity-100")
 
@@ -14,7 +14,7 @@ function Header() {
     if (!str) return str;
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
-  const listHeader = compoHeaders.map((compoHeader, i) => <a key={i} className={`${hiddens} w-14 ${opacitys}`} href={`/${compoHeader}`}> <li className="font-mon text-xl text-shadow-text-xl" >{capitalize(compoHeader)}</li></a>)
+  const listHeader = compoHeaders.map((compoHeader, i) => <a key={i} className={`${hiddens} w-14 ${opacitys}`} href={`/supper-car-k/${compoHeader === "home" ? "" : compoHeader}`}> <li className="font-mon text-xl text-shadow-text-xl" >{capitalize(compoHeader)}</li></a>)
   // Header
 
   // Move Header
@@ -89,4 +89,3 @@ function Header() {
     </>
   )
 }
-export default Header

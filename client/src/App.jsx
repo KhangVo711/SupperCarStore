@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Outlet } from 'react-router'
 import Header from './components/Header.jsx'
 import Home from './components/Home.jsx'
 function App() {
@@ -21,7 +22,9 @@ function App() {
   return (  
     <div className="">
         <Header />
-        <Home />
+
+        <Outlet />
+        {/* <Home /> */}
     </div>
   )
 }
