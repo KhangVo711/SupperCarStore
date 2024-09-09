@@ -1,6 +1,5 @@
 .afterBlackOverlay {
     position: relative;
-  
   }
   
 .afterBlackOverlay::after {
@@ -13,4 +12,18 @@
     background-color: rgba(0, 0, 0, 1);
     z-index: -2;
     height: 100vh;
+}
+
+.afterBgCut::after{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 6.6rem;
+  left: 80rem;
+  width: 21.85rem;
+  height: calc(75%);
+  background-color: #ffffff;
+  transform-origin: center center;
+  transform: translateX(-50%) skew(-35deg);
 }

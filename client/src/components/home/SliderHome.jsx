@@ -4,24 +4,24 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 export default function SliderHome() {
 
-    const listTextImgs = [
-        {
-            srcTextImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/64944ed5af4f7900226ad22d-logo-menu-car-sf90%20stradale_export?',
-            srcImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649ec85da3933d0095d1203f-ferrari-models-menu-2023-cards-sf90-stradale?width=850&height=395'
-        },
-        {
-            srcTextImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649450f059497e002227fc42-ferrari-menu-car-04_ferrari%20296%20ts_export?',
-            srcImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649ec8a6e4a85f0089b49315-ferrari-models-menu-2023-cards-296-gts?width=850&height=395'
-        },
-        {
-            srcTextImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649459c2096d6200233aaa54-menu-ferrari-logo-812%20competizione%20a_export?',
-            srcImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649ec942f6396100889d6e17-ferrari-models-menu-2023-cards-812-competizione-a?width=850&height=395'
-        },
-        {
-            srcTextImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/64945a709148ac002333bdb5-menu-logo-car-ferrari%20daytona%20sp3_export?',
-            srcImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649ecafd437d870023cf5351-ferrari-models-menu-2023-cards-ferrari-daytonasp3?width=850&height=395'
-        }
-    ]
+    // const listTextImgs = [
+    //     {
+    //         srcTextImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/64944ed5af4f7900226ad22d-logo-menu-car-sf90%20stradale_export?',
+    //         srcImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649ec85da3933d0095d1203f-ferrari-models-menu-2023-cards-sf90-stradale?width=850&height=395'
+    //     },
+    //     {
+    //         srcTextImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649450f059497e002227fc42-ferrari-menu-car-04_ferrari%20296%20ts_export?',
+    //         srcImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649ec8a6e4a85f0089b49315-ferrari-models-menu-2023-cards-296-gts?width=850&height=395'
+    //     },
+    //     {
+    //         srcTextImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649459c2096d6200233aaa54-menu-ferrari-logo-812%20competizione%20a_export?',
+    //         srcImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649ec942f6396100889d6e17-ferrari-models-menu-2023-cards-812-competizione-a?width=850&height=395'
+    //     },
+    //     {
+    //         srcTextImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/64945a709148ac002333bdb5-menu-logo-car-ferrari%20daytona%20sp3_export?',
+    //         srcImg: 'https://cdn.ferrari.com/cms/network/media/img/resize/649ecafd437d870023cf5351-ferrari-models-menu-2023-cards-ferrari-daytonasp3?width=850&height=395'
+    //     }
+    // ]
 
     const sliderRef = useRef(null);
 
@@ -608,7 +608,7 @@ export default function SliderHome() {
                     <div className="inner m-24 ">
                         <div ref={imgRef_s1} className="bg-radial-custom absolute bottom-[12%] left-[53.5%] w-[800px] h-[535px] z-1 rounded-full"></div>
                         <img ref={imgRefs1_s1}
-                            className="absolute bottom-[57.5%] left-[68%] justify-self-end drop-shadow-lg z-3"
+                            className="absolute bottom-[59.5%] left-[68%] justify-self-end drop-shadow-lg z-3"
                             src="https://cdn.ferrari.com/cms/network/media/img/resize/64944ed5af4f7900226ad22d-logo-menu-car-sf90%20stradale_export?"
                             alt="Name SupperCar"
                         />
@@ -617,9 +617,10 @@ export default function SliderHome() {
                             src="https://cdn.ferrari.com/cms/network/media/img/resize/649ec85da3933d0095d1203f-ferrari-models-menu-2023-cards-sf90-stradale?width=850&height=395"
                             alt="SupperCar"
                         />
-                        <div className="content text-white w-1/3 absolute bottom-[28%] left-44 flex flex-col items-center">
+                        {/* bottom 28% */}
+                        <div className="content text-white w-1/3 absolute bottom-[20%] left-44 flex flex-col items-center">
                             <h1 ref={h1Ref1_s1} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas">SF90 Stradale</h1>
-                            <h1 ref={h1Ref2_s1} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas">new series-production supercar</h1>
+                            <h1 ref={h1Ref2_s1} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas text-center">new series-production supercar</h1>
                             <p ref={pRef_s1} className="text-justify font-mon text-sm leading-6 mt-5">The car’s name encapsulates the true significance of all that has been achieved in terms of performance. The reference to the 90th anniversary of the foundation of Scuderia Ferrari underscores the strong link that has always existed between Ferrari’s track and road cars. A brilliant encapsulation of the most advanced technologies developed in Maranello, the SF90 Stradale is also the perfect demonstration of how Ferrari immediately transitions the knowledge and skills it acquires in competition to its production cars.</p>
 
                             <button ref={moreRef_s1} className="w-32 h-12 flex mt-20 z-1 border border-solid border-white bg-white hover:bg-black group/detail transition-all ease-in-out duration-300 ">
@@ -650,7 +651,7 @@ export default function SliderHome() {
                     <div className="inner m-24 ">
                         <div ref={imgRef_s2} className="bg-radial-custom absolute bottom-[12%] left-[53.5%] w-[800px] h-[535px] z-1 rounded-full"></div>
                         <img ref={imgRefs1_s2}
-                            className="absolute bottom-[57.5%] left-[68%] justify-self-end drop-shadow-lg z-3"
+                            className="absolute bottom-[59.5%] left-[68%] justify-self-end drop-shadow-lg z-3"
                             src="https://cdn.ferrari.com/cms/network/media/img/resize/649450f059497e002227fc42-ferrari-menu-car-04_ferrari%20296%20ts_export?"
                             alt="Name SupperCar"
                         />
@@ -659,9 +660,9 @@ export default function SliderHome() {
                             src="https://cdn.ferrari.com/cms/network/media/img/resize/649ec8a6e4a85f0089b49315-ferrari-models-menu-2023-cards-296-gts?width=850&height=395"
                             alt="SupperCar"
                         />
-                        <div className="content text-white w-1/3 absolute bottom-[28%] left-44 flex flex-col items-center">
+                        <div className="content text-white w-1/3 absolute bottom-[20%] left-44 flex flex-col items-center">
                             <h1 ref={h1Ref1_s2} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas">F296 GTS</h1>
-                            <h1 ref={h1Ref2_s2} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas">series-production supercar</h1>
+                            <h1 ref={h1Ref2_s2} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas text-center">series-production supercar</h1>
                             <p ref={pRef_s2} className="text-justify font-mon text-sm leading-6 mt-5">The Ferrari 296 GTS, the evolution of Ferrari’s mid-rear-engined two-seater berlinetta spider concept, is powered by the new 120° V6 engine coupled with a plug-in (PHEV) electric motor that debuted on the 296 GTB, which unleashes a massive 830 cv in total. The car thus redefines the whole concept of fun behind the wheel, guaranteeing pure emotions not just when it is being pushed to its limits, but also in day-to-day driving situations.</p>
 
                             <button ref={moreRef_s2} className="w-32 h-12 flex mt-20 z-1 border border-solid border-white bg-white hover:bg-black group/detail transition-all ease-in-out duration-300 ">
@@ -687,7 +688,7 @@ export default function SliderHome() {
                     <div className="inner m-24 ">
                         <div ref={imgRef_s3} className="bg-radial-custom absolute bottom-[12%] left-[53.5%] w-[800px] h-[535px] z-1 rounded-full"></div>
                         <img ref={imgRefs1_s3}
-                            className="absolute bottom-[57.5%] left-[68%] justify-self-end drop-shadow-lg z-3"
+                            className="absolute bottom-[59.5%] left-[68%] justify-self-end drop-shadow-lg z-3"
                             src="https://cdn.ferrari.com/cms/network/media/img/resize/649459c2096d6200233aaa54-menu-ferrari-logo-812%20competizione%20a_export?"
                             alt="Name SupperCar"
                         />
@@ -696,9 +697,9 @@ export default function SliderHome() {
                             src="https://cdn.ferrari.com/cms/network/media/img/resize/649ec942f6396100889d6e17-ferrari-models-menu-2023-cards-812-competizione-a?width=850&height=395"
                             alt="SupperCar"
                         />
-                        <div className="content text-white w-1/3 absolute bottom-[28%] left-44 flex flex-col items-center">
+                        <div className="content text-white w-1/3 absolute bottom-[20%] left-44 flex flex-col items-center">
                             <h1 ref={h1Ref1_s3} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas">F812 Competizione A</h1>
-                            <h1 ref={h1Ref2_s3} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas">special niche in automotive</h1>
+                            <h1 ref={h1Ref2_s3} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas text-center">special niche in automotive</h1>
                             <p ref={pRef_s3} className="text-justify font-mon text-sm leading-6 mt-5">The 812 Competizione A, a spectacular limited-series with Targa top, is an homage to the Prancing Horse’s glorious open-top tradition. The car encapsulates and epitomises the company’s 70-plus years of experience on the world’s circuits, drawing on its thoroughbred sports car DNA to deliver a perfect marriage of performance, form and functionality. Aimed at Ferrari’s most passionate collectors and connoisseurs, it features numerous uncompromising engineering solutions to guarantee peerless driving pleasure.</p>
 
                             <button ref={moreRef_s3} className="w-32 h-12 flex mt-20 z-1 border border-solid border-white bg-white hover:bg-black group/detail transition-all ease-in-out duration-300 ">
@@ -724,7 +725,7 @@ export default function SliderHome() {
                     <div className="inner m-24 ">
                         <div ref={imgRef_s4} className="bg-radial-custom absolute bottom-[12%] left-[53.5%] w-[800px] h-[535px] z-1 rounded-full"></div>
                         <img ref={imgRefs1_s4}
-                            className="absolute bottom-[57.5%] left-[68%] justify-self-end drop-shadow-lg z-3"
+                            className="absolute bottom-[59.5%] left-[70%] justify-self-end drop-shadow-lg z-3"
                             src="https://cdn.ferrari.com/cms/network/media/img/resize/64945a709148ac002333bdb5-menu-logo-car-ferrari%20daytona%20sp3_export?"
                             alt="Name SupperCar"
                         />
@@ -733,9 +734,9 @@ export default function SliderHome() {
                             src="https://cdn.ferrari.com/cms/network/media/img/resize/649ecafd437d870023cf5351-ferrari-models-menu-2023-cards-ferrari-daytonasp3?width=850&height=395"
                             alt="SupperCar"
                         />
-                        <div className="content text-white w-1/3 absolute bottom-[28%] left-44 flex flex-col items-center">
+                        <div className="content text-white w-1/3 absolute bottom-[20%] left-44 flex flex-col items-center">
                             <h1 ref={h1Ref1_s4} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas">Ferrari Daytona SP3</h1>
-                            <h1 ref={h1Ref2_s4} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas">A SPORTS PROTOTYPE SOUL</h1>
+                            <h1 ref={h1Ref2_s4} className="uppercase text-6xl tracking-tight text-shadow-sm font-bebas text-center">A SPORTS PROTOTYPE SOUL</h1>
                             <p ref={pRef_s4} className="text-justify font-mon text-sm leading-6 mt-5">At the 1967 24 Hours of Daytona, Ferrari took the top three places in the first round of the International World Sports Car Championship. The 330 P3/4, 330 P4 and 412 P that famously shot past the chequered flag side by side perfectly encapsulated the spirit of the sports prototypes of the 1960s, a decade now considered the golden era of closed wheel racing. The Ferrari Daytona SP3, the second car to join the limited edition Icona series, pays homage to the mid-rear-engined Ferrari V12 sports prototypes that earned the marque its unparalleled motor sport status.</p>
 
                             <button ref={moreRef_s4} className="w-32 h-12 flex mt-20 z-1 border border-solid border-white bg-white hover:bg-black group/detail transition-all ease-in-out duration-300 ">
