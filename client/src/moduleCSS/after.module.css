@@ -14,16 +14,16 @@
     height: 100vh;
 }
 
-.afterBgCut::after{
+/* .afterBgCut::after{
   content: '';
   display: block;
   position: absolute;
   z-index: 2;
   top: 6.6rem;
-  left: 80rem;
+  left: 75rem;
   width: 21.85rem;
-  height: calc(75%);
+  height: 80%;
   background-color: #ffffff;
   transform-origin: center center;
   transform: translateX(-50%) skew(-35deg);
-}
+} */

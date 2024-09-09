@@ -77,7 +77,7 @@ export default function Header() {
       <div ref={searchRef} className={`transition-all duration-500 ease-in-out fixed drop-shadow-2xl start-3/4 z-50 ${yValues} w-2/12 ${yNone}`}>
         <div className="relative">
         <input type="text" className="h-11 w-full pl-2 bg-transparent text-white text-lg drop-shadow-xl outline-none" placeholder="Enter the search to find"/>
-        <div className="absolute bg-white h-0.5 w-full z-50 top-9 shadow-lg"></div>
+        <div className="absolute bg-slate-600 h-0.5 w-full z-50 top-9 shadow-lg"></div>
         </div>
       </div>
       <div className="z-50 fixed text-white right-10 top-10 hover:scale-110 cursor-pointer" onClick={() => { if (yValues === "-top-4") {setYvalues("top-11"); setYnone("opacity-100"); } else { setYvalues("-top-4"); setYnone("opacity-0"); } }}>
