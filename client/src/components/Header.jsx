@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import logo from '../assets/image/Logo.png';
+import logo from '../assets/image/LogoSPCar.png';
+import hexa from '../moduleCSS/styleImg.module.css'
+
 
 
 export default function Header() {
@@ -14,7 +16,7 @@ export default function Header() {
     if (!str) return str;
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
-  const listHeader = compoHeaders.map((compoHeader, i) => <a key={i} className={`${hiddens} w-14 ${opacitys}`} href={`/supper-car-k/${compoHeader === "home" ? "" : compoHeader}`}> <li className="font-mon text-xl" >{capitalize(compoHeader)}</li></a>)
+  const listHeader = compoHeaders.map((compoHeader, i) => <a key={i} className={`${hiddens} w-20 flex items-center ${opacitys}`} href={`/supper-car-k/${compoHeader === "home" ? "" : compoHeader}`}> <li className="font-mon text-xl w-full text-center" >{capitalize(compoHeader)}</li></a>)
   // Header
 
   // Move Header
@@ -49,7 +51,7 @@ export default function Header() {
   // Move Header
 
   // GSAP Width
-  const [widths, setWidths] = useState("w-3/12")
+  const [widths, setWidths] = useState("w-1/3")
   useGSAP(() => {
     gsap.to(headerRef.current, { duration: 1, width: widths, display: hiddens });
   }, [widths, hiddens])
@@ -62,13 +64,15 @@ export default function Header() {
   useGSAP(() => {
     gsap.to(searchRef.current, {y: yValues, display: yNone, duration: 1});
   }, [yValues, yNone])
-  // GSAP Search
+  // GSAP Search 
   return (
     <>
-    <img className="z-50 fixed top-5 left-10 w-16 h-16 drop-shadow-2xl" src={logo} alt="Logo" />
-      <div ref={headerRef} style={{ transform: `translate(${offsetHeader.x}px, ${offsetHeader.y}px)` }} className={`truncate transition-all duration-700 ease-in-out pr-2 select-none cursor-pointer bg-opacity fixed ${widths} h-11 ${hiddens} items-center z-50 text-black-300 font-semibold rounded-xl shadow-lg top-11 left-80`} onMouseDown={handleMouseDown}>
+    <div className={`z-50 fixed top-7 shadow-inner left-10 w-20 h-20 bg-[#171717] flex items-center justify-center ${hexa.hexagon}`}>
+    <img className=" w-24 h-24 " src={logo} alt="Logo" />
+    </div>
+      <div ref={headerRef} style={{ transform: `translate(${offsetHeader.x}px, ${offsetHeader.y}px)` }} className={`truncate transition-all duration-700 ${widths} ease-in-out pr-2 select-none cursor-pointer bg-opacity fixed  h-11 ${hiddens} items-center z-50 text-black-300 font-semibold rounded-xl shadow-lg top-11 left-80`} onMouseDown={handleMouseDown}>
         <ul className="flex w-full justify-around">{listHeader}</ul>
-        <div className=" hover:scale-110" onClick={() => { if (widths === "w-3/12") { setWidths("w-14"); setHiddens("hidden"); setOpacitys("opacity-0"); setOffsetHeader({x: -327, y: 427})} else { setWidths("w-3/12"); setHiddens("flex"); setOpacitys("opacity-100"); setOffsetHeader({x: 0, y: 0}) } }}>
+        <div className=" hover:scale-110" onClick={() => { if (widths === "w-1/3") { setWidths("w-14"); setHiddens("hidden"); setOpacitys("opacity-0"); setOffsetHeader({x: -327, y: 427})} else { setWidths("w-1/3"); setHiddens("flex"); setOpacitys("opacity-100"); setOffsetHeader({x: 0, y: 0}) } }}>
           <svg className="size-9 flex items-center justify-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
