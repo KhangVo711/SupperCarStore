@@ -1,6 +1,7 @@
 import BannerHome from "./home/BannerHome.jsx";
 import ContentDetail from "./home/ContentDetail.jsx";
 import SliderHome from "./home/SliderHome.jsx";
+import SpecialSeri from "./home/SpecialSeri.jsx";
 
 export default function Home() {
 
@@ -9,6 +10,7 @@ export default function Home() {
       <BannerHome/>
       <SliderHome/>
       <ContentDetail/>
+      <SpecialSeri/>
     </div>
   )
 }
