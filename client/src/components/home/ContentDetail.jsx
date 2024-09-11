@@ -2,8 +2,10 @@ import img1 from '../../assets/image/ImgDetailHome/Img1.png';
 import beforeBg from '../../moduleCSS/before.module.css';
 import afterBg from '../../moduleCSS/after.module.css'
 
+
 export default function ContentDetail(){
 
+  
     return(
         <>
         <div className={`relative ${beforeBg.beforeBgCut} ${afterBg.afterBgCut} h-screen flex items-center justify-items-between`}>

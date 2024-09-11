@@ -9,8 +9,9 @@ export default function Home() {
     <div className="flex flex-col">
       <BannerHome/>
       <SliderHome/>
-      <ContentDetail/>
       <SpecialSeri/>
+
+      <ContentDetail/>
     </div>
   )
 }
