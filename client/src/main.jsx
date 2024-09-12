@@ -8,6 +8,7 @@ import Contact from './components/Contact.jsx'
 import Home from './components/Home.jsx'
 import Store from './components/Store.jsx'
 import './index.css'
+import Authentical from './components/Authentical.jsx'
 
 const router = createBrowserRouter([{
   path: "/supper-car-k/",
@@ -28,6 +29,10 @@ const router = createBrowserRouter([{
     {
       path: "/supper-car-k/store",
       element: <Store />
+    },
+    {
+      path: "/supper-car-k/authen/register",
+      element: <Authentical />
     }
   ]
 

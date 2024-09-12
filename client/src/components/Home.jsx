@@ -10,7 +10,6 @@ export default function Home() {
       <BannerHome/>
       <SliderHome/>
       <SpecialSeri/>
-
       <ContentDetail/>
     </div>
   )

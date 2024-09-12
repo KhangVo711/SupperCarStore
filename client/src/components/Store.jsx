@@ -1,3 +1,5 @@
-export default function Contact() {
-
+export default function Store() {
+    return(
+        <div>STORE</div>
+    )
 }
