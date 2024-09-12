@@ -18,6 +18,7 @@ export default {
       },
       colors: {
         'opacity': 'hsl(0deg 3.09% 93.47% / 40%)',
+        'opacity-50': 'hsl(0deg 3.09% 93.47% / 15%)',
       },
       fontFamily: {
         mon: ['Montserrat', 'sans-serif'],
@@ -55,6 +56,7 @@ export default {
 
       addUtilities(newUtilities, ['responsive', 'hover']);
     },
+    
   ],
 }
 

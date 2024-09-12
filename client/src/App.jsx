@@ -1,6 +1,8 @@
+import { getToPathname } from '@remix-run/router'
 import { useState, useEffect } from 'react'
 import { Outlet } from 'react-router'
 import Header from './components/Header.jsx'
+import { useLocation } from 'react-router-dom'
 
 function App() {
 
@@ -18,11 +20,11 @@ function App() {
       /* {users.map ((u, index) => (
       <p className="text-red-500" key = {index}>{u.username}-{u.email}-{u.password}</p>
     ))} */
-
+   const location = useLocation()
+   const isAuthenPath = /^\/supper-car-k\/authen\/.*/.test(location.pathname);
   return (  
     <div className="">
-        
-        <Header />
+      {isAuthenPath ? null : <Header />}
 
         <Outlet />
         {/* <Home /> */}

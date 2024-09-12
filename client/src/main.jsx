@@ -10,7 +10,8 @@ import Store from './components/Store.jsx'
 import './index.css'
 import Authentical from './components/Authentical.jsx'
 
-const router = createBrowserRouter([{
+const router = createBrowserRouter(
+  [{
   path: "/supper-car-k/",
   element: <App/>,
   children: [
@@ -31,12 +32,15 @@ const router = createBrowserRouter([{
       element: <Store />
     },
     {
-      path: "/supper-car-k/authen/register",
+      path: "authen/*",
       element: <Authentical />
     }
   ]
 
-}])
+}],
+
+
+)
 
 
 createRoot(document.getElementById('root')).render(
